@@ -1,0 +1,46 @@
+<html>
+<head>
+<link rel="stylesheet" href="js/bootstrap-3.3.5/css/bootstrap.min.css">
+</head>
+<body>
+<div class="row" style="margin-left: 10px;padding-top: 30px;">	
+	<div class="col-md-6">
+		<div class="input-group">
+			<div class="input-group-btn">
+			<button type="button" class="btn btn-default dropdown-toggle"  data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" data-target="#"><span id="branch">mp</span> 
+				<span class="caret"></span>
+			</button>
+	        <ul class="dropdown-menu">
+	          <li><a href="#" class="drop_b">mp</a></li>
+	          <li><a href="#" class="drop_b">wap</a></li>
+	          <li><a href="#" class="drop_b">open</a></li>
+	        </ul>
+	    </div>
+	      <input type="text" class="form-control" placeholder="分支名" aria-describedby="basic-addon1" id="svn_creat_name">
+	    </div>
+	</div>
+	<button type="button" class="btn btn-success" id="svn_create_bt">创建svn</button>
+</div>
+
+
+<div class="modal fade"  id="branch_modal">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h4 class="modal-title">系统提示</h4>
+      </div>
+      <div class="modal-body">
+        <p id="branch_m_text">分支名不能为空</p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-danger" id="branch_m_ok">确定</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+</body>
+<script src="js/jquery.js"></script>
+<script src="js/bootstrap-3.3.5/js/bootstrap.min.js"></script>
+<script src="js/option.js"></script>
+</html>

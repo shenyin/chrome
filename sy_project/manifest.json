@@ -1,0 +1,76 @@
+{
+    "manifest_version": 2,
+    "name": "sy插件",
+    "version": "1.0",
+    "description": "实验项目",
+    "content_scripts": [{
+        "matches": ["*://*/*"],
+        //"matches": ["http://devyin.mp.weixin.qq.com:8080/*","https://mp.weixin.qq.com/*"],
+        "js": ["js/jquery.js","js/sy_content.js"]
+    }],
+    "background": {
+        "scripts": [
+            "js/jquery.js","js/background.js"
+        ]
+    },
+    "permissions": [
+        "contextMenus",
+        "storage",
+        "tabs",
+        "*://*/*"
+    ], 
+     "icons": {
+        "16": "images/qyc.png",
+        "48": "images/qyc.png",
+        "128": "images/qyc.png"
+    },
+    "browser_action":{
+        "default_icon":{
+            "19": "images/qyc.png",
+            "38": "images/qyc.png"            
+        },
+        "default_popup": "popup.html"
+    },
+    "options_page": "option.html"
+}
+
+/*
+"manifest_version": 2,//chrome插件版本
+"icons": {
+    "16": "",
+    "48": "",
+    "128": "图片"
+},
+"default_title": "图标hover提示文字",
+"default_popup": "弹窗html"
+permissions：插件请求ajax地址(*://*)
+"background": {
+    "scripts": [
+        "后台js"
+    ]
+}
+"content_scripts": [{
+    "matches": ["*://*"],
+    "js": ["匹配js"]
+}]
+ */
+//chrome.browserAction.setIcon({path: 'images/online.png')
+/*{
+    "manifest_version": 2,//chrome插件版本
+    "name": "我的时钟",
+    "version": "1.0",
+    "description": "我的第一个Chrome扩展",
+        "icons": {
+            "16": "images/icon16.png",
+            "48": "images/icon48.png",
+            "128": "images/icon128.png"
+        },
+    "browser_action": {
+        "default_icon": {
+            "19": "images/icon19.png",
+            "38": "images/icon38.png"
+        },
+        "default_title": "时钟",
+        "default_popup": "popup.html"
+    }
+}*/
